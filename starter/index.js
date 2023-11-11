@@ -89,5 +89,16 @@ var finances = [
 
 var totalNumberOfMonths = finances.length;
 
+var initialValue = 0;
+
+var totalAmount = finances.reduce(
+  (accumulator, currentValue) => accumulator + currentValue[1],
+  initialValue,
+);
+
+
+
+
+
 
 
