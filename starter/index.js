@@ -87,14 +87,51 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+// Evaluating the total number of months
 var totalNumberOfMonths = finances.length;
 
+// Evaluating the net total amount of Profit/Losses over the entire period
 var initialValue = 0;
 
 var totalAmount = finances.reduce(
   (accumulator, currentValue) => accumulator + currentValue[1],
   initialValue,
 );
+
+// Evaluating the average of the changes in Profit/Losses over the entire period
+let changesInProfitNLoss = 0;
+const totalChangesInProfitNLoss = [];
+let curValue = finances[0][1];
+let curDate;
+
+/* ---- For LOOP over the Data Array to evaluate the changes in Profit/Loss and push into a new array with the date of the changes ----*/
+
+    for (let i = 0; i < finances.length; i++) {
+      for (let j = 0;j < 1; j++) {
+        changesInProfitNLoss = (finances[i][j + 1]) - curValue;
+        curValue = finances[i][j + 1];
+        curDate = finances[i][j];
+      }
+      if (changesInProfitNLoss !== 0) {
+        totalChangesInProfitNLoss.push([curDate, changesInProfitNLoss]);
+      }
+    };
+
+/* ---- Evaluating the total changes in Profit/Loss by adding all the values ----*/
+    let totalChange = totalChangesInProfitNLoss.reduce(
+      (accumulator, currentValue) => accumulator + currentValue[1],
+      initialValue,
+    );
+
+/* ---- Evaluating the average changes in Profit/Loss by dividing by the number of data points to 2 decimal points ----*/
+
+    let averageChangesInProfitNLoss = (totalChange / (totalChangesInProfitNLoss.length)).toFixed(2);
+
+
+
+
+
+
 
 
 
