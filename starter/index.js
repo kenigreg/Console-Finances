@@ -135,6 +135,10 @@ const sortedValues = totalChangesInProfitNLoss.sort((a, b) => a[1] - b[1]);
 const greatestIncreaseInProfitNLoss = sortedValues[(sortedValues.length) - 1];
 
 
+// Evaluating the greatest decrease in Profit/Losses (date and amount) over the entire period
+
+const greatestDecreaseInProfitNLoss = sortedValues[0];
+
 
 
 
