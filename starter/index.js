@@ -128,6 +128,11 @@ let curDate;
     let averageChangesInProfitNLoss = (totalChange / (totalChangesInProfitNLoss.length)).toFixed(2);
 
 
+// Evaluating the greatest increase in Profit/Losses (date and amount) over the entire period
+
+const sortedValues = totalChangesInProfitNLoss.sort((a, b) => a[1] - b[1]);
+
+const greatestIncreaseInProfitNLoss = sortedValues[(sortedValues.length) - 1];
 
 
 
