@@ -140,6 +140,13 @@ const greatestIncreaseInProfitNLoss = sortedValues[(sortedValues.length) - 1];
 const greatestDecreaseInProfitNLoss = sortedValues[0];
 
 
+// Evaluating the final result of the Financial Analysis to be printed on the Console
+totalNumberOfMonths; totalAmount; averageChangesInProfitNLoss; greatestIncreaseInProfitNLoss; greatestDecreaseInProfitNLoss
+
+
+console.log("Financial Analysis \n---------------- \n" + "Total Months: " + totalNumberOfMonths + "\nTotal: $" + totalAmount + "\nAverage Change: " + averageChangesInProfitNLoss + "\nGreatest Increase in Profits/Losses: " + greatestIncreaseInProfitNLoss[0] + " ($" + greatestIncreaseInProfitNLoss[1] + ") \n" + "Greatest Decrease in Profits/Losses: " + greatestDecreaseInProfitNLoss[0] + " ($" + greatestDecreaseInProfitNLoss[1] + ")");
+
+
 
 
 
