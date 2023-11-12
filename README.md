@@ -1,6 +1,6 @@
 # Console Finances
 
-The aim of this project is to write javaScript code to analyse the financial records of a company. I have used the provided financial dataset in the [starter/index.js](starter/index.js) file to complete the analysis. The dataset provided is composed of arrays with two fields - Date and Profit/Losses.
+The aim of this project is to write JavaScript code to analyse the financial records of a company. I have used the provided financial dataset in the [starter/index.js](starter/index.js) file to complete the analysis. The dataset provided is composed of arrays with two fields - Date and Profit/Losses.
 
 ## Financial Analysis
 
