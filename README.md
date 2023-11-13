@@ -29,4 +29,4 @@ Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
 
 ## Deployment
 
-The application is deployed live at the following [Web Page](kenigreg.github.io/Console-Finances).
+The application is deployed live at the following [Web Page](https://kenigreg.github.io/Console-Finances/).
